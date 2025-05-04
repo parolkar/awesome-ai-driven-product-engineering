@@ -1,8 +1,8 @@
 # Awesome AI-Driven Product Management & Engineering [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 
-A curated list of awesome resources for AI Driven Product Engineering (Engineers + Program managers/ Product owners) to learn and grow.  AI-driven product engineering is the use of artificial intelligence by product engineers to guide AI Agents to build products on a guided path through series of prompts and Human+AI interventions.
+A curated list of resources for AI-driven product engineering. This list covers tools, prompts, and best practices for engineers and product managers leveraging AI to build and manage products more efficiently.
 
-# Contents
+## Contents
 - [AI Prompts](#ai-prompts)
   - [User Stories](#user-stories)
 - [Tools](#tools)
@@ -36,7 +36,9 @@ Wireframing tool that allows building mocks without a strong focus on details. E
 
 ## Additional resources
 
-- [Awesome List for Traditional Product Management](https://github.com/dend/awesome-product-management) - A collection of resources for traditional product management.
+- [Awesome List for Traditional Product Management](https://github.com/dend/awesome-product-management#readme) - Collection of resources for traditional product management.
 
+## Contributing
 
+Contributions are welcome! Please see [contributing.md](contributing.md) for guidelines.
 
