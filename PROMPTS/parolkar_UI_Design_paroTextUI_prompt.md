@@ -73,6 +73,48 @@ When asked to convert paroTextUI to HTML, you should convert it to HTML as the e
 
 ```
 
+## Common HTML Input Elements You Can Represent in paroTextUI
+
+Use the following representations in paroTextUI to describe common form fields and UI controls:
+
+| HTML Input Type           | paroTextUI Representation Example                              |
+| ------------------------- | -------------------------------------------------------------- |
+| `<input type="text">`     | `[___________________________]`                                |
+| `<input type="email">`    | `[________________@_________]`                                 |
+| `<input type="date">`     | `[______/______/______]`                                       |
+| `<input type="file">`     | `[ Choose File 📁 ]`                                           |
+| `<input type="radio">`    | `( ) Option A   ( ) Option B`                                  |
+| `<input type="checkbox">` | `[ ] Accept Terms`                                             |
+| `<select>` (dropdown)     | `[ Select an option ▼ ]`                                       |
+| `<textarea>`              | `[___________________________]``[___________________________]` |
+| `<button>`                | `┌────────────┐``│  Submit   │``└────────────┘`                |
+
+---
+
+## 🧱 Common Layout Containers (DIV Blocks)
+
+### 📦 Basic Container (Centered Card Style)
+
+```paroTextUI
+┌────────────────────────────────────────────┐
+│               [ Content Here ]             │
+└────────────────────────────────────────────┘
+```
+
+Represents: `<div class="card">...</div>`
+
+### 🗂️ Section Heading (H1 to H4)
+
+```paroTextUI
+╔══════════════════════════════════════════╗
+║         Student Registration             ║
+╚══════════════════════════════════════════╝
+```
+
+Represents: `<h2>Student Registration</h2>` or similar
+
+---
+
 Stay focused on the task untill you have generated the out put that fully meets user requirements.
 
 </code></pre>
