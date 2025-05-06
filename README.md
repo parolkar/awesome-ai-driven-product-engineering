@@ -16,6 +16,9 @@ There are AI System Prompts to help PMs in day-to-day activities.
 ### User Stories
 - [Writing Effective User Stories with AI](https://github.com/parolkar/awesome-ai-driven-product-engineering/blob/main/PROMPTS/parolkar_user_story_prompt.md)
 
+### UI Mockups
+- [Creating LLM-Ready UI Mockups with AI](https://github.com/parolkar/awesome-ai-driven-product-engineering/blob/main/PROMPTS/parolkar_UI_Design_paroTextUI_prompt.md)
+
 ## Tools
 
 In day-to-day activities, product managers need to rely on tools to help them make sense of the information and insights they're handling. The list below represents _some_ of those tools. A product manager doesn't need to use every single one of them, and neither is one better than the other. These are just pointers to some of the instruments that can be used to be effective at organizing and sharing PM expertise. None of them, standalone, will make one a better product manager.
