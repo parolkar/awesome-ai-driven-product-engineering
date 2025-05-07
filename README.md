@@ -5,6 +5,8 @@ A curated list of resources for AI-driven product engineering. This list covers 
 ## Contents
 - [AI Prompts](#ai-prompts)
   - [User Stories](#user-stories)
+  - [Product Risk Assessment](#product-risk-assessment)
+  - [UI Mockups](#ui-mockups)
 - [Tools](#tools)
   - [Balsamiq](#balsamiq)
 - [Additional resources](#additional-resources)
@@ -15,6 +17,9 @@ There are AI System Prompts to help PMs in day-to-day activities.
 
 ### User Stories
 - [Writing Effective User Stories with AI](https://github.com/parolkar/awesome-ai-driven-product-engineering/blob/main/PROMPTS/parolkar_user_story_prompt.md)
+
+### Product Risk Assessment
+- [Assessing Product Risks with AI](https://github.com/parolkar/awesome-ai-driven-product-engineering/blob/main/PROMPTS/parolkar_The_Four_Product_Risks_Marty_Cagan_prompt.md)
 
 ### UI Mockups
 - [Creating LLM-Ready UI Mockups with AI](https://github.com/parolkar/awesome-ai-driven-product-engineering/blob/main/PROMPTS/parolkar_UI_Design_paroTextUI_prompt.md)
@@ -44,4 +49,3 @@ Wireframing tool that allows building mocks without a strong focus on details. E
 ## Contributing
 
 Contributions are welcome! Please see [contributing.md](contributing.md) for guidelines.
-
