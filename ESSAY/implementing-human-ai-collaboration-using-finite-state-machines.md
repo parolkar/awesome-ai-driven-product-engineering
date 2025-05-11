@@ -21,7 +21,7 @@ More importantly, FOSMs provide the perfect structural foundation for human-AI c
 
 By combining FOSMs with modern AI capabilities, organizations can transcend the object-manipulation paradigm, creating business software that truly advances human work rather than merely digitizing it. This symbiosis offers a revolutionary framework for building adaptive, compliant systems where humans and AI collaborate seamlessly within clear, verifiable boundaries.
 
-## Introduction – "Work" as Software
+## Introduction – "Work" & Computers
 The role of computers has fundamentally been to support human activities and eventually blend so seamlessly into our processes that we redefine what constitutes "work" itself. In the Industrial age, paper forms became computer applications, eliminating physical document libraries and creating desk jobs connected via computer networks. Fast-forward to today, and "email" has itself become synonymous with "work." This transformation is not simply technological but represents a profound redefinition of human labor in the information age.
 
 ## Section I – Business Software in Objects, Functions & Process Workflows
@@ -37,7 +37,7 @@ Insights uncovered bottlenecks, giving rise to Business Process Management (BPM)
 ### 4. Integration Tangle
 Cloud applications improved UX and availability and prepared us for remote work, but at the cost of a new mess: synchronising object state across dozens of SaaS silos. Integration-platform-as-a-service players such as **Zapier** emerged to keep copies of the same Customer or Invoice in sync across apps, underscoring how entrenched the object paradigm had become. This integration tangle brought with it significant **cyber security hazards** as sensitive business objects now traversed multiple third-party systems with varying security standards.
 
-### 5. Stagnation Thesis
+### 5. Stagnation 
 Despite exponential advances in compute—imagine today's [EPYC processors](https://www.amd.com/en/products/processors/server/epyc/4th-generation-9004-and-8004-series.html#portfolio) in the hands of 1990s developers—the underlying modelling technique has barely evolved. If such computing power had been available earlier, the unbundling of monolithic applications into smaller distributed parts might not have been the immediate need in business software. Yet functionally, we have made little progress in innovating *how* software is created to advance human work. Every business software remains fundamentally a set of objects with CRUD operations, wrapped in ever-thicker integration layers that struggle to keep data consistent across your computers and other people's computers.
 
 ## Section II – Rethinking Business Software as Finite Object State Machines
@@ -149,15 +149,16 @@ The explicit structure of FOSMs creates the perfect foundation for natural langu
 
 This democratizes process knowledge, allowing anyone in the organization to understand and interact with complex workflows without specialized training.
 
-### 6. Autonomous Process Optimisation
-Beyond just executing processes, AI can help organizations improve their processes:
+### 6. Autonomous Process Optimisation & Organizational Memory
+Beyond just executing processes, AI can help organizations improve their processes while preserving and enhancing institutional knowledge:
 
-- **Bottleneck Identification**: RL agents can analyze transition time distributions to identify process blockages
+- **Bottleneck Identification**: Reinforcement Learning (RL) agents—AI systems that learn through trial and error with feedback—can analyze transition time distributions to identify process blockages
 - **A/B Testing Transitions**: Different guard implementations or transition paths can be tested against business KPIs
 - **Simulation-Based Optimization**: AI can simulate thousands of process variations to recommend optimal state machine designs
 - **Continuous Adaptation**: As business conditions change, AI can suggest FOSM modifications to maintain optimal performance
+- **Organizational Tacit Knowledge**: The state machine data becomes the organization's "brain"—capturing not just what processes exist, but how they evolve, where they get stuck, and what constitutes successful paths
 
-This shifts process optimization from periodic, consultant-led initiatives to continuous, data-driven evolution.
+This approach transforms FOSMs into living repositories of institutional knowledge, where the cumulative wisdom of the organization becomes encoded in the transition patterns, guard conditions, and historical paths. Unlike traditional process documentation that quickly becomes outdated, this knowledge continuously evolves alongside the business. Process optimization shifts from periodic, consultant-led initiatives to continuous, data-driven evolution grounded in the organization's actual operations.
 
 ### 7. Safety & Alignment
 The explicit nature of FOSMs provides guard rails for AI autonomy:
