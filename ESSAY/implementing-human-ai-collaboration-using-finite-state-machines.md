@@ -168,22 +168,3 @@ The explicit nature of FOSMs provides guard rails for AI autonomy:
 - **Human Approval States**: Critical transitions can require explicit human approval, creating natural checkpoints in autonomous processes
 
 These properties make FOSMs an ideal architecture for deploying AI in regulated, high-stakes environments where unconstrained AI action would be unacceptable.
-bject 
-## Implementation Blueprint
-1. Domain-modelling workshop → state diagrams.
-2. Tech stacks: XState, AWS Step Functions, Temporal.io.
-3. Migration: Strangler pattern.
-4. AI integration patterns: event-driven micro-agents.
-5. Observability: transition latency, dwell time, AI suggestion acceptance rate.
-
-## Case Study (Optional)
-* Walk through Employee Onboarding or Loan Approval FSM and AI touchpoints.
-
-## Challenges & Mitigations
-* State explosion, versioning, explainability, organisational change.
-
-## Conclusion
-Re-emphasise FSMs as structural scaffolding enabling safe, transparent, adaptive Human + AI collaboration.
-
-## References / Further Reading
-* FSM literature, AI alignment papers, tool docs (XState, Step Functions, Temporal).
