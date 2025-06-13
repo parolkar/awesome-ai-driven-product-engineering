@@ -220,6 +220,53 @@ As organizations increasingly rely on the complementary capabilities of humans a
 
 The future of enterprise software lies not in merely digitizing existing processes, but in fundamentally rethinking how humans and machines collaborate to achieve business outcomes. FOSMs provide the architectural foundation for this future—one where compliance is built-in, processes continuously improve, and human creativity is amplified rather than constrained by the software we use.
 
+## Appendix – Example FOSM Defined in SCXML
+
+Below is a minimal State Chart XML (SCXML) model that captures the life-cycle of a **Customer** object in a CRM context. The model complies with the W3C recommendation “State Chart XML (SCXML): State Machine Notation for Control Abstraction” (<https://www.w3.org/TR/scxml/>).
+
+```xml
+<!-- customer-lifecycle.scxml -->
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       version="1.0"
+       initial="lead">
+  <!-- State: Lead -->
+  <state id="lead">
+    <transition event="qualify" target="prospect"/>
+  </state>
+
+  <!-- State: Prospect -->
+  <state id="prospect">
+    <transition event="firstPurchase" target="activeCustomer"/>
+    <transition event="disqualify" target="churned"/>
+  </state>
+
+  <!-- State: Active Customer -->
+  <state id="activeCustomer">
+    <transition event="supportIssue" target="support"/>
+    <transition event="inactivity"
+                cond="monthsSinceLastPurchase &gt;= 6"
+                target="churned"/>
+  </state>
+
+  <!-- Orthogonal region for handling support tickets -->
+  <state id="support">
+    <transition event="issueResolved" target="activeCustomer"/>
+  </state>
+
+  <!-- Final State: Churned -->
+  <final id="churned"/>
+</scxml>
+```
+
+### How to Read This Model
+- **Initial State (`lead`)**: Every new customer starts as a *lead*.
+- **Events**: `qualify`, `firstPurchase`, `supportIssue`, `inactivity`, etc. represent real-world triggers.
+- **Guards**: The `inactivity` transition fires only when the guard `monthsSinceLastPurchase >= 6` evaluates to true.
+- **Side-Effects**: In a production system, each transition may invoke external services (e.g., send an email, update analytics). These can be modeled via the `<onentry>` / `<onexit>` elements or `<script>` tags in SCXML.
+- **Final State (`churned`)**: Indicates the end of the customer’s active lifecycle.
+
+Because SCXML is executable, this definition can be interpreted directly by compliant engines such as Apache Commons SCXML or XState, enabling rapid prototyping and validation of FOSM designs. AI agents can also consume the same model to understand valid transitions, suggest next actions, or simulate customer journeys.
+
 ## References
 
 - Avnur, A. (2015). A Finite State Machine Model for Requirements Engineering. *Requirements Engineering Magazine*. [Link](https://re-magazine.ireb.org/articles/a-finite-state-machine-model)
